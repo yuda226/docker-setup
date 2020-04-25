@@ -7,6 +7,7 @@ This is a guide to setting up docker container on your Ubunt. This setup is for 
 **Uninstall old versions**
 
 ```bash
+# Remove old version of docker
 sudo apt-get remove docker docker-engine docker.io containerd runc
 ```
 
@@ -15,8 +16,10 @@ sudo apt-get remove docker docker-engine docker.io containerd runc
 **Set up the repository**
 
 ```bash
+# Update system
 sudo apt-get update
 
+# Setup your repository and install some dependencies
 sudo apt-get install \
   apt-transport-https \
   ca-certificates \

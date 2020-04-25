@@ -38,3 +38,7 @@ sudo usermod -aG docker $USER
 # On a desktop Linux environment such as X Windows, log out of your session completely and then log back in.
 # On Linux, you can also run the following command to activate the changes to groups:
 newgrp docker
+
+echo "=================================="
+echo "Installation for docker completed!\n"
+echo "Please test if your docker install correctly with `docker run hello-world`"
