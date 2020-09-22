@@ -12,7 +12,7 @@ sudo systemctl start docker && sudo systemctl enable docker
 
 ## My Setup Steps
 
-## Step 1
+### Step 1
 
 **Uninstall old versions**
 
@@ -21,7 +21,7 @@ sudo systemctl start docker && sudo systemctl enable docker
 sudo apt-get remove docker docker-engine docker.io containerd runc
 ```
 
-## Step 2
+### Step 2
 
 **Set up the repository**
 
@@ -69,7 +69,7 @@ xenial \
 stable"
 ```
 
-## Step 3
+### Step 3
 
 **Install Docker Engine**
 
@@ -81,7 +81,7 @@ sudo apt-get update
 sudo apt-get install docker-ce docker-ce-cli containerd.io
 ```
 
-## Step 4
+### Step 4
 
 **Add my user to use docker container without sudo**
 
