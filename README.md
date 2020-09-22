@@ -2,6 +2,16 @@
 
 This is a guide to setting up docker container on your Ubunt. This setup is for Ubuntu 16.04, however, I believe it will be very similar for other Ubuntu systems.
 
+## Official Installation Script
+
+```
+curl https://get.docker.com | sh
+
+sudo systemctl start docker && sudo systemctl enable docker
+```
+
+## My Setup Steps
+
 ## Step 1
 
 **Uninstall old versions**
