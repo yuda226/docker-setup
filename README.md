@@ -101,6 +101,19 @@ newgrp docker
 # Verify that you can run docker commands without sudo
 docker run hello-world
 ```
+### Step 5
+
+**Setting up NVIDIA Container Toolkit**
+
+```bash
+# Setup the stable repository and the GPG key:
+distribution=$(. /etc/os-release;echo $ID$VERSION_ID) \
+   && curl -s -L https://nvidia.github.io/nvidia-docker/gpgkey | sudo apt-key add - \
+   && curl -s -L https://nvidia.github.io/nvidia-docker/$distribution/nvidia-docker.list | sudo tee /etc/apt/sources.list.d/nvidia-docker.list
+ 
+sudo apt-get update
+sudo apt install nvidia-container-toolkit
+```
 
 ## Search for Help on How to Use docker command
 
